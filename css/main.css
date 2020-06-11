@@ -98,18 +98,43 @@ textarea {
 
   .header{
     display: flex;
+    padding: 20px 0;
   }
+
+  /* needs width*/
+  header .header-divder{
+    width: 100%;
+    margin: 10px 0 20px 0;
+  }
+  /* needs width*/
   header nav{
     display: flex;
     flex-flow: row wrap;
+    width: 60%;
   }
+  /* needs width*/
 header nav ul{
   display: flex;
   flex-flow: row wrap;
+  width: 100%;
 }
+/* needs width*/
   header .content-wrapper{
     display: flex;
     flex-flow: row wrap;
+    margin: 0;
+    width: 100%;
+  }
+  /* needs width*/
+  footer .content-wrapper{
+    width: 100%;
+    margin: 50px 0;
+  }
+  footer .contact{
+    margin-bottom: 50px;
+  }
+  footer .copyright{
+
   }
  footer .social-icons{
    display: flex;
@@ -120,6 +145,9 @@ header nav ul{
    display: flex;
    justify-content: center;
    align-items: center;
+ }
+ footer p{
+   margin: 20px 0;
  }
 
  /*---------- Mobile Styles -------*/
@@ -145,12 +173,19 @@ header nav ul{
     justify-content: center;
     flex-flow: row wrap;
   }
+/* needs width*/
+features article{
 
+}
   features .features-items{
     display: flex;
     justify-content: center;
     align-items: center;
   flex-flow: row wrap;
+  }
+
+  features p{
+    margin: 0;
   }
   
 /* Reviews */
@@ -158,6 +193,11 @@ header nav ul{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* needs width*/
+reviews h3{
+
 }
 /*======
 About Page
