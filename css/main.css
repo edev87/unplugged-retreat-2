@@ -104,18 +104,21 @@ textarea {
   /* needs width*/
   header .header-divder{
     width: 100%;
+    height: 1px;
     margin: 10px 0 20px 0;
   }
   /* needs width*/
   header nav{
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
     width: 60%;
   }
   /* needs width*/
 header nav ul{
   display: flex;
-  flex-flow: row wrap;
+  justify-content: space-around;
   width: 100%;
 }
 /* needs width*/
@@ -123,18 +126,20 @@ header nav ul{
     display: flex;
     flex-flow: row wrap;
     margin: 0;
-    width: 100%;
   }
   /* needs width*/
   footer .content-wrapper{
-    width: 100%;
+    width: 60%;
     margin: 50px 0;
+  }
+  footer{
+    flex-direction: column;
   }
   footer .contact{
     margin-bottom: 50px;
   }
-  footer .copyright{
-
+  footer .copyright{  
+    margin: 20px 0;
   }
  footer .social-icons{
    display: flex;
@@ -147,7 +152,7 @@ header nav ul{
    align-items: center;
  }
  footer p{
-   margin: 20px 0;
+   margin:  0;
  }
 
  /*---------- Mobile Styles -------*/
@@ -318,8 +323,142 @@ flex-flow: row wrap;
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
+   2
    ========================================================================== */
 
+@media only screen and (min-width: 768px) {
+/*Tablet styles here*/
+
+/* General styles */
+.content-wrapper{
+max-width: 60px;
+margin: 100px 0;
+}
+/* Header */
+header{
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+header .content-wrapper {
+  width: 100%;
+  justify-content: space-between;
+}
+
+header nav {
+  width: 20%;
+}
+
+header nav ul {
+  justify-content: space-betwwen;
+
+}
+
+.header-divider {
+  display: none;
+}
+
+/*Hero Area */
+
+/*Aside */
+aside .content-wrapper{
+margin: 50px 0;
+display: flex;
+justify-content: space-between;
+flex-flow: row wrap;
+}
+
+aside .content-wraper.form-description,
+aside .content-wrapper .form {
+width: 40%;
+margin: 0;
+}
+/*Features */
+features article{
+display: flex;
+justify-content: center;
+flex-flow: column wrap;
+flex-basis: 50%;
+}
+features .features-items-description{
+  width: 50%;
+}
+
+/*Reviews */
+
+.reviews article{
+display: flex;
+justify-content: space-between;
+}
+
+.reviews article div{
+width: 40%;
+} 
+
+/*Footer*/
+
+footer .content-wrapper{
+  width: 65%;
+  margin: 100px 0;
+  
+}
+.footer-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .contact{
+margin-bottom: 0;
+}
+footer .copyright{
+width: 100%;
+}
+/* ==========================================================================
+     About Page
+     ========================================================================== */
+  
+     .mission-content {
+      display: flex;
+       justify-content: space-between;
+        align-items: center;
+    }
+  
+    .mission-content p {
+      width: 50%;
+    }
+  
+    .contact-section .content-wrapper h2 {
+      width:80;
+    }
+  
+    .contact-content {
+      display: flex;
+      justify-content:space-between;
+      align-items: flex-start;
+    }
+  
+    /* ==========================================================================
+     FAQ Page
+     ========================================================================== */
+  
+    .faq .content-wrapper {
+    justify-content: space-between;
+    }
+  
+    .faq-content {
+     flex-basis: 40%;
+    }
+  
+    .faq h2 {
+     width: 100%;
+    }
+  }
+ 
+@media only screen and (min-width: 1200px) {
+/*Desktop styles here*/
+}
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
 }
@@ -405,4 +544,3 @@ flex-flow: row wrap;
     page-break-after: avoid;
   }
 }
-
