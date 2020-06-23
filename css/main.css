@@ -96,6 +96,8 @@ body {
   font-size: 1em;
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
+  color: #e2e3ed;
+  text-align: left;
 }
  
 ul, 
@@ -110,15 +112,17 @@ a {
 }
  
 h2 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   font-size: 1.875em;
 }
  
 h3, 
 h4 {
   font-family: 'Poppins', sans-serif;
-  margin: 20px 0;
+  font-weight: 500;
   font-size: 1.125em;
+  margin: 20px 0;
 }
  
 p {
@@ -138,6 +142,7 @@ address{
 /*-------- Base Header - Footer Styles --------*/
 
    header,footer{
+    background-color: #202322;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -151,17 +156,21 @@ address{
 
   /* needs width*/
   header .header-divder{
-    width: 100%;
+    background: #3a3a3a; 
     height: 1px;
+    width: 100%;
     margin: 10px 0 20px 0;
   }
   /* needs width*/
   header nav{
+    width: 60%;
+  font-size: 1.125em;
+  font-weight: 700;
+  text-transform: uppercase;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
-    width: 60%;
   }
   /* needs width*/
 header nav ul{
@@ -171,9 +180,14 @@ header nav ul{
 }
 /* needs width*/
   header .content-wrapper{
-    display: flex;
-    flex-flow: row wrap;
     margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap
+  }
+  header nav ul li {
+    font-size: 1.125em;
   }
   /* needs width*/
   footer .content-wrapper{
@@ -181,6 +195,7 @@ header nav ul{
     margin: 50px 0;
   }
   footer{
+    text-align: center;
     flex-direction: column;
   }
   footer .contact{
@@ -200,7 +215,7 @@ header nav ul{
    align-items: center;
  }
  footer p{
-   margin:  0;
+   margin: 20px 0;
  }
   
 
@@ -213,14 +228,46 @@ header nav ul{
    flex-flow: row wrap;
  }
 
+ .hero-area h1 {
+  font-size: 2.25em;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500; 
+  line-height: 1.2; 
+}
+
  /* Aside */
   aside{
+    background-color: #527158;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
   }
 
+aside .form{
+  margin-top: 30px;
+}
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
   /* Fearures */
   .features{
     display: flex;
@@ -245,10 +292,12 @@ margin: 30px;
 
   features p{
     margin: 0;
+    text-align: center;
   }
   
 /* Reviews */
 .reiviews {
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -256,6 +305,7 @@ margin: 30px;
 
 .reviews h2{
   margin-bottom: 40px;
+  line-height: 1;
 }
 /* needs width*/
 reviews h3{
@@ -268,22 +318,28 @@ About Page
 =======*/
 
 mission {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
 flex-flow: row wrap;
 }
 .contact-section{
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
   align-items: center;
+}
+.contact-content p {
+  margin: 0;
 }
 
 /*=======
 FAQ Page
 ======*/
 faq{
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -295,36 +351,18 @@ justify-content: center;
 align-items: center;
 flex-flow: row wrap;
 }
-.contact-content p {
-  margin: 0;
+
+.faq h2 {
+  margin-bottom: 40px;
 }
 
-/* ==========================================================================
-   FAQ Page
-   ========================================================================== */
+.faq-content h4{
+  line-height: 1.333;
+}
 
-   .faq {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-  }
-  
-  .faq .content-wrapper {
-    margin: 50px 0 0 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-  }
-  
-  .faq h2 {
-    margin-bottom: 40px;
-  }
-  
-  .faq-content {
-    margin-bottom: 50px;
-  }
+.faq-content {
+  margin-bottom: 50px;
+}
 
 /* ==========================================================================
    Helper classes
